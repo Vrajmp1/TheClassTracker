@@ -1,35 +1,35 @@
 html, body {
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 
 #hero-section {
   background: rgb(180, 188, 217);
-  min-height: 20%;
+  min-height: 20vh;
 }
 
 h3 {
   color: white;
 }
+
 .display-1 {
   font-family: 'Playfair Display', serif;
-  padding: 50px 0px;
 }
 
-input, select{
-  margin-bottom: 10px;
+input, select {
+  margin-bottom: 1rem;
   width: 85%;
 }
 
 #content-section {
-  width: 100vw;
+  width: 100%;
   background-color: #ff5900;
 }
 
 label {
   display: block;
   left: 50%;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
@@ -37,168 +37,204 @@ button {
   position: relative;
   margin: 0 auto;
   left: 30%;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 button:hover {
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
 #result {
   text-align: center;
   font-weight: 400;
   font-family: 'Playfair Display', serif;
-  font-size: 500%;
-  margin: auto auto;
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  margin: auto;
 }
 
-#result-container label{
-  min-height: 60px;
+#result-container label {
+  min-height: 4rem;
 }
 
-/*-----------------------------*/
-
-/* DEBUG */
-/* * {
-    background-color: black !important;
-    color: black !important;
-    border: 2px solid red !important;
-} */
-
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing:border-box; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin:0;
+  margin: 0;
 }
 
 header {
   background-color: #b1b0b5;
-  height: 100px;
+  height: 10vh;
 }
 
 #logo {
   background: transparent;
-  height: 60px;
+  height: 6vh;
   position: absolute;
-  top: 20px;
-  left: 5px;
+  top: 2vh;
+  left: 1%;
 }
- 
+
 .navbar ul {
   position: relative;
-  left: 140px;
+  left: 10%;
   background-color: #b1b0b5;
   list-style: none;
-  margin: 0px;
-  padding: 20px 0 0 0;
+  margin-left: 2%;
+  padding: 1rem 0 0 0;
   text-align: left;
 }
 
 .navbar li {
   display: inline-block;
   background-color: #b1b0b5;
-  padding: 20px;
-  margin: 0 25px;
+  padding: 1rem;
+  margin: 0 1.5rem;
 }
- 
+
 .navbar a {
   background-color: #b1b0b5;
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 section {
-  margin:0px;
+  margin: 0;
 }
 
 #hero {
   position: relative;
   text-align: center;
-  height: 500px;
-  width: 100vw; 
+  height: 80vh;
+  width: 100%;
   background-image:
-    linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.2)),
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
     url("https://png.pngtree.com/thumb_back/fw800/background/20231009/pngtree-d-render-of-an-online-marketing-website-on-a-laptop-in-image_13595569.png");
-  background-position: center, center;
-  background-size: cover, cover;
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
 }
 
-#hero-content{
+#hero-content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-#hero-content h1{
+#hero-content h1 {
   font-family: 'Roboto Mono', monospace;
   color: white;
   letter-spacing: 2px;
-  font-size: 60px;
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
 }
 
-#hero-content h2{
-  font-size: 32px;
+#hero-content h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
   color: white;
   font-family: 'Roboto Mono', monospace;
 }
 
-.container{
+.container {
   position: relative;
-  left: 40px;
 }
-.about h2{
+
+.about h2 {
   display: inline-block;
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-left: 40px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-left: 2.5rem;
   font-family: 'Anton', sans-serif;
-  font-size: 40px;
+  font-size: clamp(2rem, 4vw, 2.5rem);
   letter-spacing: 3px;
 }
 
-.about h3{
-  font-size: 25px;
+.about h3 {
+  font-size: clamp(1rem, 3vw, 1.25rem);
 }
 
-.about div img{
+.about div img {
   float: left;
   position: relative;
-  height: clamp(100px,150px,240px);
+  height: clamp(6rem, 10vw, 15rem);
   border: solid black 2px;
-  box-sizing:border-box;
-  margin-right: 30px;
-  margin-bottom: 20px;
+  box-sizing: border-box;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
   transition-duration: 2s;
 }
 
-.about div img:hover{
+.about div img:hover {
   transform: scale(1.15);
 }
 
-.about div p{
+.about div p {
   display: inline;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .sign {
-  margin-top: 50px;
-  height: 50px;
+  margin-top: 3rem;
+  height: 10vh;
   color: white;
-  font-size: 15px;
+  font-size: 1rem;
   background-color: #413d4c;
 }
 
-.sign p{
+.sign p {
   position: relative;
-  left: 5%;
   top: 50%;
   transform: translateY(-50%);
+  margin: 2%;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  header {
+    height: 8vh;
+  }
+  #logo {
+    height: 5vh;
+  }
+  .navbar li {
+    margin: 0 1rem;
+  }
+  #hero {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero-content h1 {
+    font-size: clamp(2rem, 6vw, 2.5rem);
+  }
+  #hero-content h2 {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+  }
+  .navbar li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  .about div img {
+    height: clamp(5rem, 8vw, 10rem);
+  }
+}
+
+@media (max-width: 480px) {
+  #hero-content {
+    padding: 1rem;
+  }
+  #hero-content h1 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+  .navbar ul {
+    left: 0;
+    padding: 1rem;
+  }
 }
