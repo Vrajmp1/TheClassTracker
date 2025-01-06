@@ -210,12 +210,27 @@ section {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+#hero {
+  position: relative;
+  text-align: center;
+  height: 63vh;
+  width: 100%;
+}
+.sign {
+  margin-top: 3rem;
+  height: 16vh;
+  font-size: 0.7rem;
+  background-color: #413d4c;
+}
   #hero-content h1 {
     font-size: clamp(2rem, 6vw, 2.5rem);
   }
   #hero-content h2 {
     font-size: clamp(1.25rem, 3vw, 1.5rem);
+  }
+  #hero-content h3{
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
   }
   .navbar li {
     display: block;
@@ -227,14 +242,29 @@ section {
 }
 
 @media (max-width: 480px) {
+#hero {
+  position: relative;
+  text-align: center;
+  height: 60vh;
+  width: 100%;
+}
   #hero-content {
     padding: 1rem;
   }
   #hero-content h1 {
     font-size: clamp(1.5rem, 5vw, 2rem);
   }
+  #hero-content h2 {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+  }
   .navbar ul {
     left: 0;
     padding: 1rem;
   }
+.sign {
+  margin-top: 3rem;
+  height: 16vh;
+  font-size: 0.7rem;
+  background-color: #413d4c;
+}
 }
