@@ -268,3 +268,8 @@ section {
   background-color: #413d4c;
 }
 }
+
+#flyer {
+  margin: 2rem;
+  width: 80vw;
+}
