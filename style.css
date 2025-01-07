@@ -272,3 +272,10 @@ section {
 #flyer {
   width: 80vw;
 }
+
+.imgcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+}

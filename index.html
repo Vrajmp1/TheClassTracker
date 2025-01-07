@@ -29,13 +29,15 @@
         </div>
       </div>
     </section>
-    <section class="about">
-      <div style="width: 100%;" class="container">
-          <h2 style="text-align: center;">Our Story</h2>
+    <section>
+	<div class="container">
+	<br>
+	<h2 style="text-align:center;">Our Story</h2><br>
       </div>
+    </section>
+    <section class="about">
       <div class="container">
         <img id="p-begin" src="TheClassTrackerLogo.jpg"  alt="Company logo">
-        <h3 style="text-align: center;">Our Story</h3>
         <p>Welcome to TheClassTracker!</p>
         <br><br>
         <p>
@@ -58,17 +60,31 @@ Join a growing community of USF students who’ve let TheClassTracker help them 
 <span style="text-align:center;">Start Tracking Today!</span>
 Don’t wait until it’s too late — let TheClassTracker give you the edge in securing your spot. Sign up now and stay ahead of the rush!<br><br>
 	</div>
-	<div class="container">
-	<h2 style="text-align:center;">Contact Our Team</h2><br>
-<p style="text-align:center;">For questions or support, contact our team at <a href="mailto:info@theclasstracker.com">info@theclasstracker.com</a> We highly appreciate all types of feedback from our users as we continue to improve this service!</p><br><br>
-        <br>
-        <br>
-      </div>
     </section>
     <section>
 	<div class="container">
-	    <img style="text-align:center;" id="flyer" src="Flyer.jpg" alt="Instructions Flyer">
+	    <img class="imgcenter" id="flyer" src="Flyer.jpg" alt="Instructions Flyer">
 	</div>
+    </section>
+    <section>
+	<div class="container">
+	<br>
+	<h2 style="text-align:center;">Convenient Payment Methods</h2>
+	<p style="text-align:center;">Make sure to include your name, course code, and CRN in the payment notes. Use the /notifyPaymentCommand in telegram to let us know you have made the payment. We will review your payment and add you to the notifications subscription list for your chosen CRN as soon as possible, but allow up to 6 hours before reaching out to us.</p>
+      </div>
+    </section>
+    <section>
+        <div class="container col-center">
+	    <img id="paymentMethod" class="imgcenter" src="paymentMethods.jpg" alt="TheClassTracker Venmo & CashApp QR Codes">
+	</div>
+    </section>
+    <section>
+	<div class="container">
+	<br>
+	<h2 style="text-align:center;">Contact Our Team</h2>
+<p style="text-align:center;">For questions or support, contact our team at <a href="mailto:info@theclasstracker.com">info@theclasstracker.com</a> We highly appreciate all types of feedback from our users as we continue to improve this service!</p>
+        <br>
+      </div>
     </section>
     <footer>
       <div class="sign">
@@ -80,34 +96,6 @@ Don’t wait until it’s too late — let TheClassTracker give you the edge in 
       <h1 class = "display-1 text-center"><strong>Happy Tracking!</strong></h1>
     </div>
   </section>
-  <section id="content-section" class="d-none">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-6">
-          <form>
-            <label for="loan-amount">Loan Amount:</label>
-            <input id="loan-amount" type="text" name="loan-amount">
-            <label for="loan-term">Loan term</label>
-            <select id="loan-term" name="loan-term">
-              <option value="10">10 yr</option>
-              <option value="15">15 yr</option>
-              <option value="20">20 yr</option>
-              <option value="25">25 yr</option>
-              <option value="30">30 yr</option>
-            </select>
-            <label for="interest-rate">Interest rate:</label>
-            <input id="interest-rate" type="number" step="0.125" name="interest-rate">
-          </form>
-          <button onclick="calculate()" type="button" class="btn btn-primary">CALCULATE!</button>
-        </div>
-        <div id="result-container" class="col-12 col-sm-6">
-          <label>Monthly PI Payment</label>
-          <div id="result"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <script src="script.js"></script>
 </body>
 </html>
